@@ -161,8 +161,6 @@ http://localhost/honey_shop/public
 
 Admin panel: `http://localhost/honey_shop/public/admin/login`
 
-> ⚠️ **Change these passwords** (or create new admin users and delete the seeded ones) before deploying this anywhere beyond your local machine.
-
 ---
 
 ## Project Structure Notes
