@@ -2,6 +2,40 @@
 
 A full-featured e-commerce platform for selling honey, built with Laravel. Supports guest checkout, customer accounts with loyalty discounts, a role-based admin panel (admin/staff), product discounts, notifications, a contact/support inbox, a togglable comments & feedback system, a token-authenticated API, and full English/Arabic (RTL) localization.
 
+## Screenshots
+
+### Storefront
+
+| Home Page | Product Page (with discount) | Cart |
+|---|---|---|
+| ![Home page](docs/screenshots/home.png) | ![Product page](docs/screenshots/product.png) | ![Cart](docs/screenshots/cart.png) |
+
+| Checkout | Order Confirmation |
+|---|---|
+| ![Checkout](docs/screenshots/checkout.png) | ![Order confirmation](docs/screenshots/order-confirmation.png) |
+
+### Customer Account
+
+| Login | My Orders (loyalty discount) |
+|---|---|
+| ![Login](docs/screenshots/login.png) | ![My orders](docs/screenshots/my-orders.png) |
+
+### Admin Panel
+
+| Dashboard | Products | Orders |
+|---|---|---|
+| ![Admin dashboard](docs/screenshots/admin-dashboard.png) | ![Admin products](docs/screenshots/admin-products.png) | ![Admin orders](docs/screenshots/admin-orders.png) |
+
+| Order Detail & Status Update | Feature Settings (license toggle) |
+|---|---|
+| ![Admin order detail](docs/screenshots/admin-order-detail.png) | ![Admin settings](docs/screenshots/admin-settings.png) |![Admin notifications](docs/screenshots/notification.png) |
+
+### Arabic (RTL) Support
+
+| Home Page (Arabic) | Admin Dashboard (Arabic) |
+|---|---|
+| ![Home page Arabic](docs/screenshots/home-ar.png) | ![Admin dashboard Arabic](docs/screenshots/admin-dashboard-ar.png) |
+
 ## Features
 
 - **Storefront** — browse catalogs, view products, cart, guest or logged-in checkout
@@ -163,6 +197,27 @@ Hard-refresh your browser (`Ctrl+Shift+R` / `Cmd+Shift+R`) — browsers aggressi
 `routes/api.php` isn't registered. Re-run `php artisan install:api`, or manually add the `api:` line to `withRouting()` in `bootstrap/app.php` as shown above.
 
 ---
+
+## Taking Screenshots
+
+When you're ready to fill in the placeholders above:
+
+1. Create the folder: `docs/screenshots/` in your project root.
+2. Capture each page listed in the table above and save it with the **exact filename** shown (e.g. `home.png`, `admin-dashboard.png`) — the README already links to these paths, so matching names means no further edits needed.
+3. A few tips for consistent, professional-looking screenshots:
+   - Use a consistent browser window size (e.g. 1440×900) for all desktop shots so the gallery looks uniform.
+   - Populate the shop with a few real-looking products first (use `HoneyShopSeeder`, or add 4-5 products with real image URLs) — empty tables and placeholder images make screenshots look unfinished.
+   - For the **admin** shots, log in as the `admin` account so all sidebar links (Users, Settings) are visible.
+   - For the **discount** product screenshot, make sure at least one product has a discount set (Admin → Products → Edit → Discount) so the struck-through price and badge are visible.
+   - For the **loyalty discount** shot on "My Orders," you'll need a customer account with at least 3 completed orders — mark a few test orders as `completed` from the admin panel first.
+   - For the **Arabic** shots, switch the language via the 🌐 dropdown before capturing — check that the RTL layout and Cairo font are rendering correctly.
+   - Crop out browser chrome (tabs, bookmarks bar) if possible — a full-page screenshot tool or browser extension (like "GoFullPage" or your browser's built-in screenshot tool) gives cleaner results than a raw window capture.
+4. Commit the images along with your next push:
+   ```bash
+   git add docs/screenshots/
+   git commit -m "Add project screenshots"
+   git push
+   ```
 
 ## License
 
