@@ -52,7 +52,7 @@ Navigate into your XAMPP `htdocs` folder first, then clone:
 
 ```bash
 cd C:\xampp\htdocs
-git clone https://github.com/<your-username>/honey_shop.git
+git clone https://github.com/salimessouidi7/honey_shop.git
 cd honey_shop
 ```
 
