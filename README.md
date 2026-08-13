@@ -197,5 +197,3 @@ Hard-refresh your browser (`Ctrl+Shift+R` / `Cmd+Shift+R`) — browsers aggressi
 ---
 
 ## License
-
-This project is for personal/educational use. Add a license of your choice here (MIT is a common permissive option) if you plan to distribute or open-source it.
